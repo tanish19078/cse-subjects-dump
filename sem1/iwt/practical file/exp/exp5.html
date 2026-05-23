@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form action="#" method="post">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+
+    <label>Interests:</label><br>
+    <input type="checkbox" id="reading" name="interest" value="Reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="traveling" name="interest" value="Traveling">
+    <label for="traveling">Traveling</label>
+    <input type="checkbox" id="music" name="interest" value="Music">
+    <label for="music">Music</label><br><br>
+
+    <label for="subject">Subject:</label><br>
+    <select id="subject" name="subject">
+      <option value="">--Select--</option>
+      <option value="feedback">Feedback</option>
+      <option value="support">Support</option>
+      <option value="inquiry">General Inquiry</option>
+    </select><br><br>
+
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message here..."></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
