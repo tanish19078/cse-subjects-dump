@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+        }
+
+        form br {
+            display: none;
+        }
+
+        input {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .err {
+            color: red;
+            font-size: 12px;
+            margin-top: -5px;
+            margin-bottom: 5px;
+            min-height: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return val()">
+        Name: <input id="n"><br>
+        <span id="en" class="err"></span><br>
+
+        Email: <input id="e"><br>
+        <span id="ee" class="err"></span><br>
+
+        Password: <input type="password" id="p"><br>
+        <span id="ep" class="err"></span><br>
+
+        Confirm Password: <input type="password" id="c"><br>
+        <span id="ec" class="err"></span><br>
+
+        <button>Register</button>
+    </form>
+
+    <script>
+        function val() {
+            let n = document.getElementById("n").value;
+            let e = document.getElementById("e").value;
+            let p = document.getElementById("p").value;
+            let c = document.getElementById("c").value;
+
+            let en = document.getElementById("en");
+            let ee = document.getElementById("ee");
+            let ep = document.getElementById("ep");
+            let ec = document.getElementById("ec");
+
+            en.innerText = ""; ee.innerText = ""; ep.innerText = ""; ec.innerText = "";
+
+            let v = true;
+
+            if (n === "") { en.innerText = "Name required"; v = false; }
+            if (!e.includes("@")) { ee.innerText = "Invalid email (missing @)"; v = false; }
+              if (!e.includes(".")) { ee.innerText = "Invalid email (missing .)"; v = false; }
+            if (p.length < 8) { ep.innerText = "Min 8 characters"; v = false; }
+            if (p !== c) { ec.innerText = "Mismatch"; v = false; }
+            if (v==true) { alert("Registration successful!"); }
+
+            return v;
+        }
+    </script>
+</body>
+
+</html>

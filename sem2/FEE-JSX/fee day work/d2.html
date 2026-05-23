@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial & Fibonacci</title>
+</head>
+<body>
+
+<h3>Factorial & Fibonacci</h3>
+
+<input type="number" id="num" placeholder="Enter number">
+<br><br>
+
+<button onclick="fact()">Factorial</button>
+<button onclick="fib()">Fibonacci</button>
+
+<p id="result"></p>
+
+<script>
+function factorial(n) {
+    if (n == 0) return 1;
+    return n * factorial(n - 1);
+}
+
+function fibonacci(n) {
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+function fact() {
+    var n = parseInt(document.getElementById("num").value);
+    document.getElementById("result").innerHTML =
+        "Factorial = " + factorial(n);
+}
+
+function fib() {
+    var n = parseInt(document.getElementById("num").value);
+    document.getElementById("result").innerHTML =
+        "Fibonacci = " + fibonacci(n);
+}
+</script>
+
+</body>
+</html>

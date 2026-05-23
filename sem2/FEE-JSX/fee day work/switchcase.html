@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Switch Case with ID</title>
+</head>
+<body>
+
+  <h1>This is Control Statement</h1>
+
+  <label>Enter day number (0–6): </label>
+  <input type="number" id="dayNum">
+  <button onclick="showDay()">Show Day</button>
+
+  <p id="result"></p>
+
+  <script>
+    function showDay() {
+      let day = Number(document.getElementById("dayNum").value);
+      let output;
+
+      switch (day) {
+        case 0:
+          output = "Today is Sunday";
+          break;
+        case 1:
+          output = "Today is Monday";
+          break;
+        case 2:
+          output = "Today is Tuesday";
+          break;
+        case 3:
+          output = "Today is Wednesday";
+          break;
+        case 4:
+          output = "Today is Thursday";
+          break;
+        case 5:
+          output = "Today is Friday";
+          break;
+        case 6:
+          output = "Today is Saturday";
+          break;
+        default:
+          output = "Please enter a valid number (0–6)";
+      }
+
+      document.getElementById("result").innerText = output;
+    }
+  </script>
+
+</body>
+</html>

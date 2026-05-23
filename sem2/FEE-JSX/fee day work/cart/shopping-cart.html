@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<div class="toast-container" id="toast-container"></div>
+
+<div class="app-container">
+    <div class="header">
+        <h1>Shopping Cart</h1>
+        <p>Advanced system for item management and billing logic.</p>
+    </div>
+
+    <div class="stats-strip">
+        <div class="stat-card">
+            <div class="stat-value" id="stat-items">0</div>
+            <div class="stat-label">Products</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value" id="stat-qty">0</div>
+            <div class="stat-label">Quantity</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value highlight" id="stat-total">₹0</div>
+            <div class="stat-label">Total Value</div>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Add New Product</h3>
+            </div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" id="add-name" placeholder="e.g. Laptop">
+                </div>
+                <div class="form-group">
+                    <label>Price (₹)</label>
+                    <input type="number" id="add-price" placeholder="45000">
+                </div>
+                <div class="form-group">
+                    <label>Initial Quantity</label>
+                    <input type="number" id="add-qty" placeholder="1" value="1">
+                </div>
+            </div>
+            <div class="panel-actions">
+                <button class="btn btn-primary" onclick="handleAddItem()">Add Product</button>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Search Inventory</h3>
+            </div>
+            <div class="search-layout">
+                <input type="text" id="search-name" placeholder="Enter product name to lookup">
+                <button class="btn btn-secondary" onclick="handleSearchItem()">Search</button>
+            </div>
+            <div id="search-result"></div>
+        </div>
+
+        <div class="panel full-width">
+            <div class="panel-header">
+                <h3>Active Shopping Cart</h3>
+            </div>
+            
+            <div id="cart-display"></div>
+
+            <div class="cart-summary-actions">
+                <div class="action-buttons">
+                    <button class="btn btn-brand" onclick="launchPromptMenu()">Launch Prompt Menu</button>
+                    <button class="btn btn-primary" onclick="handleShowBill()">Calculate Total Bill</button>
+                    <button class="btn btn-outline" onclick="handleClearCart()">Clear All</button>
+                </div>
+                <div id="bill-summary" class="bill-summary"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style Change</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.5s ease;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="text">Light Mode</h1>
+    <button onclick="changeTheme()">Change Theme</button>
+  </div>
+
+  <script>
+    let dark = false;
+
+    function changeTheme() {
+      dark = !dark;
+
+      if (dark) {
+        document.body.style.backgroundColor = "#222";
+        document.body.style.color = "#fff";
+        document.getElementById("text").innerText = "Dark Mode";
+      } else {
+        document.body.style.backgroundColor = "#f4f4f4";
+        document.body.style.color = "#000";
+        document.getElementById("text").innerText = "Light Mode";
+      }
+    }
+  </script>
+</body>
+</html>
