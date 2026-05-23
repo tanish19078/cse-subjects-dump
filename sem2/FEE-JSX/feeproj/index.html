@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashMind | Interactive Flashcards</title>
+    <meta name="description" content="A frontend-only flashcard study app for active recall, deck management, and progress tracking.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/views.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="Main navigation">
+            <a class="brand" href="#dashboard" data-view-link="dashboard" aria-label="FlashMind dashboard">
+                <span class="brand-mark">FM</span>
+                <span>
+                    <strong>FlashMind</strong>
+                    <small>Active recall</small>
+                </span>
+            </a>
+
+            <nav class="nav-list">
+                <button class="nav-link active" type="button" data-view-link="dashboard">
+                    <span class="nav-symbol">D</span>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-link" type="button" data-view-link="statistics">
+                    <span class="nav-symbol">S</span>
+                    <span>Statistics</span>
+                </button>
+                <button class="nav-link" type="button" data-view-link="settings">
+                    <span class="nav-symbol">C</span>
+                    <span>Settings</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-card">
+                <span class="mini-label">Study mode</span>
+                <strong>Flip. Recall. Score.</strong>
+                <p>Track what you know and revisit weak cards.</p>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <button class="icon-button mobile-menu-button" id="mobileMenuBtn" type="button" aria-label="Toggle navigation">
+                    <span>Menu</span>
+                </button>
+                <div>
+                    <h1 id="pageTitle">Dashboard</h1>
+                </div>
+                <button class="button button-primary" id="quickCreateDeckBtn" type="button">
+                    <span>+</span>
+                    <span>New Deck</span>
+                </button>
+            </header>
+
+            <section class="view active" id="view-dashboard" data-view="dashboard">
+                <div class="metric-grid" id="metricGrid"></div>
+
+                <article class="ai-generator-panel">
+                    <div class="ai-generator-copy">
+                        <p class="eyebrow">AI Generator</p>
+                        <h2>Generate flashcards from a topic or source</h2>
+                        <p>Paste notes, a paragraph, or just a topic name. FlashMind can use Groq's Llama 3.1 model, then falls back to an offline generator if the API is unavailable.</p>
+                    </div>
+
+                    <form class="ai-generator-form" id="aiGeneratorForm">
+                        <div class="form-grid ai-form-grid">
+                            <label>
+                                <span>Topic name</span>
+                                <input id="aiTopicInput" type="text" placeholder="Example: Photosynthesis" required>
+                            </label>
+                            <label>
+                                <span>Add to deck</span>
+                                <select id="aiDeckSelect"></select>
+                            </label>
+                        </div>
+                        <label>
+                            <span>Source notes</span>
+                            <textarea id="aiSourceInput" rows="5" placeholder="Paste notes, textbook content, or key points here. If empty, FlashMind will generate from the topic name."></textarea>
+                        </label>
+                        <div class="form-grid ai-form-grid">
+                            <label>
+                                <span>Number of cards</span>
+                                <input id="aiCardCountInput" type="number" min="2" max="12" value="6">
+                            </label>
+                            <label class="checkbox-line">
+                                <input id="aiUseGroqInput" type="checkbox" checked>
+                                <span>Use Groq Llama 3.1 first</span>
+                            </label>
+                        </div>
+                        <details class="llama-settings">
+                            <summary>Groq Llama 3.1 settings</summary>
+                            <label>
+                                <span>Groq API key</span>
+                                <input id="aiGroqKeyInput" type="password" autocomplete="off" placeholder="gsk_...">
+                            </label>
+                            <div class="form-grid ai-form-grid">
+                                <label>
+                                    <span>Groq endpoint</span>
+                                    <input id="aiEndpointInput" type="url" value="https://api.groq.com/openai/v1/chat/completions">
+                                </label>
+                                <label>
+                                    <span>Model</span>
+                                    <input id="aiModelInput" type="text" value="llama-3.1-8b-instant">
+                                </label>
+                            </div>
+                            <p class="settings-note">Frontend-only demo mode: never hardcode secret API keys in the project files.</p>
+                        </details>
+                        <div class="form-actions ai-actions">
+                            <span id="aiStatus" class="ai-status">Ready to generate.</span>
+                            <button class="button button-primary" id="aiGenerateBtn" type="submit">
+                                <span>Generate Cards</span>
+                            </button>
+                        </div>
+                    </form>
+                </article>
+
+                <div class="ai-preview-grid" id="aiPreview"></div>
+
+                <div class="toolbar">
+                    <label class="search-box" for="deckSearchInput">
+                        <span class="input-symbol">Find</span>
+                        <input id="deckSearchInput" type="search" placeholder="Search decks">
+                    </label>
+                    <select class="select-control" id="deckSortSelect" aria-label="Sort decks">
+                        <option value="recent">Recently updated</option>
+                        <option value="title">Title A-Z</option>
+                        <option value="cards">Most cards</option>
+                        <option value="mastery">Highest mastery</option>
+                    </select>
+                </div>
+
+                <div class="deck-grid" id="deckGrid"></div>
+            </section>
+
+            <section class="view" id="view-deck" data-view="deck">
+                <div class="deck-detail-header">
+                    <button class="button button-soft" id="backToDashboardBtn" type="button">
+                        <span>&lt;</span>
+                        <span>Back</span>
+                    </button>
+                    <div class="deck-heading">
+                        <span class="deck-color-dot" id="activeDeckDot"></span>
+                        <div>
+                            <p class="eyebrow" id="activeDeckSubject">Subject</p>
+                            <h2 id="activeDeckTitle">Deck title</h2>
+                            <p id="activeDeckDescription">Deck description</p>
+                        </div>
+                    </div>
+                    <div class="deck-actions">
+                        <div class="deck-mini-stat">
+                            <strong id="activeDeckCardCount">0</strong>
+                            <span>Total Cards</span>
+                        </div>
+                        <div class="deck-mini-stat">
+                            <strong id="activeDeckMastery">0%</strong>
+                            <span>Mastery</span>
+                        </div>
+                        <button class="button button-soft" id="editDeckBtn" type="button">
+                            <span>Edit</span>
+                        </button>
+                        <button class="button button-primary" id="startStudyBtn" type="button">
+                            <span>Study</span>
+                        </button>
+                    </div>
+                    <div class="deck-progress-line">
+                        <div>
+                            <span>Study Progress</span>
+                            <span id="activeDeckProgressText">0 reviewed</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" id="activeDeckProgressFill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="split-layout">
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">Card Manager</p>
+                                <h3>Add flashcard</h3>
+                            </div>
+                        </div>
+                        <form class="stack-form" id="cardForm">
+                            <input type="hidden" id="cardIdInput">
+                            <label>
+                                <span>Question / Front</span>
+                                <textarea id="cardFrontInput" rows="4" required placeholder="Example: What is DOM manipulation?"></textarea>
+                            </label>
+                            <label>
+                                <span>Answer / Back</span>
+                                <textarea id="cardBackInput" rows="4" required placeholder="Example: Creating, changing, and deleting page elements using JavaScript."></textarea>
+                            </label>
+                            <div class="form-actions">
+                                <button class="button button-soft" id="cancelCardEditBtn" type="button">Cancel</button>
+                                <button class="button button-primary" type="submit">
+                                    <span id="cardSubmitText">Save Card</span>
+                                </button>
+                            </div>
+                        </form>
+                    </article>
+
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">Deck Cards</p>
+                                <h3 id="cardListTitle">0 cards</h3>
+                            </div>
+                        </div>
+                        <div class="card-list" id="cardList"></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="view" id="view-study" data-view="study">
+                <div class="study-stage">
+                    <div class="study-topline">
+                        <button class="button button-soft" id="endStudyBtn" type="button">
+                            <span>X</span>
+                            <span>End</span>
+                        </button>
+                        <div class="progress-wrap" aria-label="Study progress">
+                            <span id="studyCounter">0 / 0</span>
+                            <div class="progress-track">
+                                <div class="progress-fill" id="studyProgressFill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="study-card" id="studyCard" type="button" aria-label="Flip flashcard">
+                        <span class="study-face study-front">
+                            <small>Question</small>
+                            <strong id="studyFrontText">Question text</strong>
+                            <em>Click to reveal answer</em>
+                        </span>
+                        <span class="study-face study-back">
+                            <small>Answer</small>
+                            <strong id="studyBackText">Answer text</strong>
+                            <em>Now score your recall</em>
+                        </span>
+                    </button>
+
+                    <div class="study-scorebar" id="studyScorebar">
+                        <button class="button button-danger" type="button" data-score="unknown">
+                            <span>Don't Know</span>
+                        </button>
+                        <button class="button button-success" type="button" data-score="known">
+                            <span>Know</span>
+                        </button>
+                    </div>
+
+                    <div class="study-feedback" id="studyFeedback" aria-live="polite">
+                        <div class="feedback-orb" id="feedbackOrb">OK</div>
+                        <div class="feedback-copy">
+                            <p class="eyebrow" id="feedbackLabel">Result</p>
+                            <h3 id="feedbackTitle">Got it!</h3>
+                            <p id="feedbackText">That answer is marked as known.</p>
+                        </div>
+                        <div class="feedback-actions" id="feedbackActions">
+                            <button class="button button-soft" id="explainWrongBtn" type="button">Explain answer</button>
+                            <button class="button button-primary" id="nextStudyCardBtn" type="button">Next Card</button>
+                        </div>
+                        <div class="study-explanation hidden" id="studyExplanation"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="view" id="view-statistics" data-view="statistics">
+                <div class="stats-layout">
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">Progress</p>
+                                <h3>Mastery overview</h3>
+                            </div>
+                        </div>
+                        <canvas id="masteryChart" height="260" aria-label="Mastery chart"></canvas>
+                    </article>
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">History</p>
+                                <h3>Study sessions</h3>
+                            </div>
+                        </div>
+                        <div class="session-list" id="sessionList"></div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="view" id="view-settings" data-view="settings">
+                <div class="settings-grid">
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">Appearance</p>
+                                <h3>Notebook texture</h3>
+                            </div>
+                        </div>
+                        <label class="toggle-row">
+                            <span>
+                                <strong>Notebook grid texture</strong>
+                                <small>Show the tactile study-desk dot grid in the background.</small>
+                            </span>
+                            <input id="gridToggle" type="checkbox" checked>
+                        </label>
+                    </article>
+
+                    <article class="panel">
+                        <div class="panel-header">
+                            <div>
+                                <p class="eyebrow">Data</p>
+                                <h3>Local storage tools</h3>
+                            </div>
+                        </div>
+                        <div class="button-row">
+                            <button class="button button-soft" id="exportDataBtn" type="button">
+                                <span>Export JSON</span>
+                            </button>
+                            <label class="button button-soft file-button">
+                                <span>Import JSON</span>
+                                <input id="importDataInput" type="file" accept="application/json">
+                            </label>
+                            <button class="button button-danger" id="clearDataBtn" type="button">
+                                <span>Clear All</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <dialog class="modal" id="deckModal">
+        <form class="modal-card" id="deckForm" method="dialog">
+            <div class="modal-header">
+                <div>
+                    <p class="eyebrow">Deck Manager</p>
+                    <h2 id="deckModalTitle">Create deck</h2>
+                </div>
+                <button class="icon-button" id="closeDeckModalBtn" type="button" aria-label="Close deck form">
+                    <span>X</span>
+                </button>
+            </div>
+
+            <input type="hidden" id="deckIdInput">
+            <label>
+                <span>Deck name</span>
+                <input id="deckTitleInput" type="text" required placeholder="JavaScript Basics">
+            </label>
+            <label>
+                <span>Description</span>
+                <textarea id="deckDescriptionInput" rows="3" placeholder="Core concepts and interview questions"></textarea>
+            </label>
+            <div class="form-grid">
+                <label>
+                    <span>Subject / Tag</span>
+                    <input id="deckSubjectInput" type="text" placeholder="Programming">
+                </label>
+                <label>
+                    <span>Color label</span>
+                    <input id="deckColorInput" type="color" value="#2563eb">
+                </label>
+            </div>
+            <div class="form-actions">
+                <button class="button button-soft" id="deleteDeckBtn" type="button">Delete</button>
+                <button class="button button-primary" type="submit">
+                    <span>Save Deck</span>
+                </button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog class="modal" id="summaryModal">
+        <div class="modal-card summary-card">
+            <p class="eyebrow">Session Complete</p>
+            <h2 id="summaryTitle">Great work</h2>
+            <div class="summary-grid" id="summaryGrid"></div>
+            <div class="form-actions">
+                <button class="button button-soft" id="summaryBackBtn" type="button">Back to deck</button>
+                <button class="button button-primary" id="summaryStatsBtn" type="button">View stats</button>
+            </div>
+        </div>
+    </dialog>
+
+    <template id="emptyStateTemplate">
+        <div class="empty-state">
+            <span>Empty</span>
+            <strong>No items found</strong>
+            <p>Start by adding your first deck or card.</p>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

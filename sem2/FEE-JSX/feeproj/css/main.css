@@ -1,0 +1,336 @@
+:root {
+    --desk: #fdfbf7;
+    --surface: #ffffff;
+    --surface-blue: #f7f9ff;
+    --surface-ice: #edf4ff;
+    --surface-inlay: #f0f4fc;
+    --surface-line: #dfe6f0;
+    --text: #171c22;
+    --muted: #3f4852;
+    --outline: #bec7d4;
+    --outline-strong: #8fa0b3;
+    --primary: #00629d;
+    --primary-bright: #00a3ff;
+    --primary-soft: #cfe5ff;
+    --mint: #00ccf9;
+    --mint-soft: #b7eaff;
+    --yellow: #ffe170;
+    --yellow-strong: #c9a900;
+    --coral: #ff6b6b;
+    --danger: #ba1a1a;
+    --danger-soft: #ffdad6;
+    --shadow-card: 0 10px 30px rgba(0, 163, 255, 0.08);
+    --shadow-hover: 0 18px 42px rgba(0, 163, 255, 0.14);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --sidebar-width: 288px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text);
+    background: var(--desk);
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(circle at 1px 1px, rgba(0, 163, 255, 0.12) 1px, transparent 0);
+    background-size: 24px 24px;
+}
+
+body.grid-off::before {
+    display: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: 0;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid rgba(0, 163, 255, 0.22);
+    outline-offset: 2px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+.brand strong {
+    font-family: "Space Grotesk", Outfit, sans-serif;
+    letter-spacing: 0;
+}
+
+h1 {
+    color: var(--text);
+    font-size: clamp(2.4rem, 5vw, 3.7rem);
+    line-height: 1.04;
+}
+
+h2 {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.55rem;
+    line-height: 1.2;
+}
+
+.app-shell {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    min-height: 100vh;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding: 36px 20px;
+    background: #edf3ff;
+    border-right: 1px solid rgba(190, 199, 212, 0.72);
+    box-shadow: 8px 0 28px rgba(0, 98, 157, 0.05);
+}
+
+.brand {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    align-items: center;
+    gap: 14px;
+    padding: 0 18px;
+}
+
+.brand-mark {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    color: #00233d;
+    background: var(--primary-bright);
+    font-family: "Space Grotesk", Outfit, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    box-shadow: 0 12px 28px rgba(0, 163, 255, 0.22);
+}
+
+.brand strong {
+    display: block;
+    color: var(--primary);
+    font-size: 1.72rem;
+    line-height: 1;
+}
+
+.brand small {
+    display: block;
+    margin-top: 6px;
+    color: var(--text);
+    font-size: 0.88rem;
+}
+
+.mini-label,
+.eyebrow {
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    display: grid;
+    gap: 10px;
+}
+
+.nav-link {
+    width: 100%;
+    min-height: 56px;
+    padding: 0 18px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+    background: rgba(207, 229, 255, 0.56);
+    box-shadow: inset -4px 0 0 var(--primary);
+}
+
+.sidebar-card {
+    margin-top: auto;
+    padding: 18px;
+    border: 1px solid rgba(0, 98, 157, 0.2);
+    border-radius: var(--radius-md);
+    background: var(--primary-bright);
+    color: #00233d;
+    box-shadow: var(--shadow-card);
+}
+
+.sidebar-card .mini-label {
+    color: #00375a;
+}
+
+.sidebar-card strong {
+    display: block;
+    margin: 8px 0;
+    font-family: "Space Grotesk", Outfit, sans-serif;
+}
+
+.sidebar-card p {
+    color: #00375a;
+    line-height: 1.45;
+}
+
+.main-panel {
+    min-width: 0;
+    width: min(100%, 1280px);
+    margin: 0 auto;
+    padding: 32px 40px 56px;
+}
+
+.topbar {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 34px;
+}
+
+button.mobile-menu-button {
+    display: none;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+    animation: riseIn 0.24s ease;
+}
+
+body.study-open .app-shell {
+    grid-template-columns: 1fr;
+}
+
+body.study-open .sidebar,
+body.study-open .topbar {
+    display: none;
+}
+
+body.study-open .main-panel {
+    width: 100%;
+    max-width: none;
+    padding: 24px 40px 56px;
+}
+
+@keyframes riseIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 980px) {
+    .app-shell {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 16px;
+        top: 16px;
+        bottom: 16px;
+        z-index: 30;
+        width: min(320px, calc(100vw - 32px));
+        height: auto;
+        transform: translateX(calc(-100% - 24px));
+        transition: transform 0.2s ease;
+        border: 1px solid var(--outline);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-hover);
+    }
+
+    body.nav-open .sidebar {
+        transform: translateX(0);
+    }
+
+    button.mobile-menu-button {
+        display: inline-flex;
+    }
+
+    .main-panel,
+    body.study-open .main-panel {
+        padding: 20px 18px 42px;
+    }
+}
+
+@media (max-width: 640px) {
+    .topbar {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+    }
+
+    .topbar .button-primary {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+}

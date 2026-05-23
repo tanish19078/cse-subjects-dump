@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+*.docx
+*.pdf
+*.zip
+*.png
+
+PROJECT_UNDERSTANDING.md
+DESIGN.md
+design.md
+FEE_Synopsis_Template.docx
+fee.pdf
+
+stitch-extract/
+.vercel/
