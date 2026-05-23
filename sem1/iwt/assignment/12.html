@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Units Demonstration</title>
+  <style>
+    /* Base font size for rem calculation */
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 20px;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem; /* rem = root-relative */
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .box {
+      background-color: #ffffff;
+      border: 2px solid #007bff;
+      padding: 1em; /* em = parent-relative */
+      margin: 1em;
+      width: 45%; /* percentage-based width */
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .box h2 {
+      font-size: 1.5rem; /* root-relative */
+      margin-bottom: 0.5em;
+    }
+
+    .px-example {
+      font-size: 20px; /* fixed size */
+      color: #343a40;
+    }
+
+    .em-example {
+      font-size: 1.5em; /* relative to parent font size */
+      color: #28a745;
+    }
+
+    .rem-example {
+      font-size: 1.5rem; /* relative to root font size */
+      color: #d63384;
+    }
+
+    .percent-example {
+      font-size: 120%; /* relative to parent font size */
+      color: #fd7e14;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 0.8rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Exploring CSS Units</h1>
+    <p>Understanding px, em, rem, and % units in design</p>
+  </header>
+
+  <main class="container">
+    <div class="box">
+      <h2>Box 1: Fixed Units (px)</h2>
+      <p class="px-example">
+        This text uses <strong>pixels (px)</strong> for font sizing.
+        It stays the same size regardless of screen or parent settings.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>Box 2: Relative Units (em, rem, %)</h2>
+      <p class="em-example">
+        This text uses <strong>em</strong> units — it scales with the parent’s font size.
+      </p>
+      <p class="rem-example">
+        This text uses <strong>rem</strong> units — it scales with the root (html) font size.
+      </p>
+      <p class="percent-example">
+        This text uses <strong>%</strong> units — it’s relative to the parent’s font size.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Units  | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

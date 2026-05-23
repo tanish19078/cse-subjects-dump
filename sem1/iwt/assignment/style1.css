@@ -1,0 +1,32 @@
+/* External CSS for Blog Styling */
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #007bff;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #155724;
+}
+
+img {
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}

@@ -1,0 +1,20 @@
+/* External CSS */
+h2 {
+  color: green;
+  text-decoration: underline;
+}
+
+p {
+  color: gray;
+}
+
+/* Class selector in external CSS */
+.highlight {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+/* ID selector in external CSS */
+#special-para {
+  color: purple;
+}

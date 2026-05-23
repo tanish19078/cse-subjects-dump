@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Box Model Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 30px;
+    }
+
+    header {
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    /* Flex container to align boxes side by side */
+    .box-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .box {
+      background-color: #ffffff;
+      border: 3px solid #007bff;
+      padding: 20px;
+      margin: 10px;
+      width: 45%;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .inner-box {
+      background-color: #e3f2fd;
+      border: 2px dashed #64b5f6;
+      padding: 15px;
+      margin: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #343a40;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Understanding the CSS Box Model</h1>
+    <p>Each element can have content, padding, border, and margin.</p>
+  </header>
+
+  <main>
+    <div class="box-container">
+      <!-- Left Box -->
+      <div class="box">
+        <h2>Outer Box 1</h2>
+        <p>This outer box has a solid border, padding, and margin. It represents one section of content.</p>
+
+        <div class="inner-box">
+          <h3>Inner Box</h3>
+          <p>This inner box has its own padding, margin, and border — nested inside the outer box.</p>
+        </div>
+      </div>
+
+      <!-- Right Box -->
+      <div class="box">
+        <h2>Outer Box 2</h2>
+        <p>This is the second box placed side by side . It has similar padding and borders to maintain symmetry.</p>
+
+        <div class="inner-box">
+          <h3>Inner Box</h3>
+          <p>This inner box helps demonstrate consistent spacing and alignment across multiple elements.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Box Model Demo | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
