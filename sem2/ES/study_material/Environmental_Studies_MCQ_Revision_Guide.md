@@ -791,11 +791,17 @@ Hour 6: Practice MCQs and revise wrong answers
    c. Population  
    d. Community
 
+   **Correct Answer:** b. Ecosystem  
+   **Why:** Ecosystem is the functional unit of nature.
+
 2. Energy flow in an ecosystem is generally:
    a. Cyclic  
    b. Bidirectional  
    c. Unidirectional  
    d. Random
+
+   **Correct Answer:** c. Unidirectional  
+   **Why:** Energy flows one way through trophic levels.
 
 3. Which ecological pyramid is always upright?
    a. Pyramid of number  
@@ -803,11 +809,17 @@ Hour 6: Practice MCQs and revise wrong answers
    c. Pyramid of energy  
    d. Pyramid of age
 
+   **Correct Answer:** c. Pyramid of energy  
+   **Why:** Energy is lost at each trophic level, so energy pyramid is always upright.
+
 4. The first organisms to colonize a bare area are called:
    a. Climax species  
    b. Pioneer species  
    c. Keystone species  
    d. Endemic species
+
+   **Correct Answer:** b. Pioneer species  
+   **Why:** Pioneer species colonize first.
 
 5. Which of the following is an abiotic component?
    a. Fungi  
@@ -815,11 +827,17 @@ Hour 6: Practice MCQs and revise wrong answers
    c. Soil temperature  
    d. Bacteria
 
+   **Correct Answer:** c. Soil temperature  
+   **Why:** Soil temperature is non-living.
+
 6. A food web is more stable than a food chain because:
    a. It has no producers  
    b. It has alternate feeding links  
    c. It stops energy loss  
    d. It removes decomposers
+
+   **Correct Answer:** b. It has alternate feeding links  
+   **Why:** Food webs provide alternate pathways.
 
 7. Which starts with dead organic matter?
    a. Grazing food chain  
@@ -827,11 +845,17 @@ Hour 6: Practice MCQs and revise wrong answers
    c. Predator food chain  
    d. Parasitic food chain
 
+   **Correct Answer:** b. Detritus food chain  
+   **Why:** Detritus food chain begins with dead organic matter.
+
 8. The 10 percent law is related to:
    a. Water pollution  
    b. Energy transfer  
    c. Ozone depletion  
    d. Soil erosion
+
+   **Correct Answer:** b. Energy transfer  
+   **Why:** 10 percent law explains energy transfer.
 
 9. Secondary succession is faster than primary succession because:
    a. There is no sunlight  
@@ -839,11 +863,17 @@ Hour 6: Practice MCQs and revise wrong answers
    c. There are no organisms  
    d. It occurs only in deserts
 
+   **Correct Answer:** b. Soil is already present  
+   **Why:** Soil already exists in secondary succession.
+
 10. Decomposers mainly help in:
     a. Photosynthesis  
     b. Nutrient recycling  
     c. Ozone formation  
     d. Noise reduction
+
+   **Correct Answer:** b. Nutrient recycling  
+   **Why:** Decomposers recycle nutrients.
 
 ## Unit 2: Ecosystems And Natural Resources
 
@@ -853,11 +883,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. They remove all decomposers  
     d. They reduce biodiversity
 
+   **Correct Answer:** b. Roots bind soil  
+   **Why:** Roots bind soil and reduce erosion.
+
 12. The defining feature of a desert ecosystem is:
     a. Absence of all animals  
     b. High rainfall  
     c. Low rainfall  
     d. Only high temperature
+
+   **Correct Answer:** c. Low rainfall  
+   **Why:** Low rainfall defines deserts.
 
 13. Grasslands are usually dominated by:
     a. Algae  
@@ -865,11 +901,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Coral reefs  
     d. Cacti only
 
+   **Correct Answer:** b. Grasses  
+   **Why:** Grasslands are dominated by grasses.
+
 14. Removal of fertile topsoil by wind or water is called:
     a. Eutrophication  
     b. Soil erosion  
     c. Succession  
     d. Biomagnification
+
+   **Correct Answer:** b. Soil erosion  
+   **Why:** Soil erosion is removal of topsoil.
 
 15. Drip irrigation is preferred because it:
     a. Wastes more water  
@@ -877,11 +919,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Increases air pollution  
     d. Causes ozone depletion
 
+   **Correct Answer:** b. Saves water  
+   **Why:** Drip irrigation reduces water wastage.
+
 16. Meteorological drought is mainly related to:
     a. Low rainfall  
     b. Low soil fertility  
     c. Excess noise  
     d. High biodiversity
+
+   **Correct Answer:** a. Low rainfall  
+   **Why:** Meteorological drought is rainfall deficiency.
 
 17. Desertification means:
     a. Formation of oceans  
@@ -889,11 +937,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Increase in forest cover  
     d. Conversion of desert into wetland
 
+   **Correct Answer:** b. Land degradation in dry regions  
+   **Why:** Desertification is dryland degradation.
+
 18. Which is a water management practice?
     a. Rainwater harvesting  
     b. Open dumping  
     c. Deforestation  
     d. Overgrazing
+
+   **Correct Answer:** a. Rainwater harvesting  
+   **Why:** Rainwater harvesting conserves water.
 
 19. Which ecosystem usually has high tree density and high biodiversity?
     a. Desert  
@@ -901,11 +955,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Urban road  
     d. Glacier
 
+   **Correct Answer:** b. Forest  
+   **Why:** Forests have dense trees and high biodiversity.
+
 20. Land is considered a natural resource because it supports:
     a. Only industries  
     b. Agriculture, forests, settlements, and biodiversity  
     c. Only deserts  
     d. Only water pollution
+
+   **Correct Answer:** b. Agriculture, forests, settlements, and biodiversity  
+   **Why:** Land supports many human and ecological uses.
 
 ## Unit 3: Pollution
 
@@ -915,11 +975,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Biotic pollutant  
     d. Climatic pollutant
 
+   **Correct Answer:** b. Primary pollutant  
+   **Why:** Primary pollutants are emitted directly.
+
 22. Ground-level ozone is:
     a. A useful stratospheric shield  
     b. A secondary air pollutant  
     c. A soil nutrient  
     d. A decomposer
+
+   **Correct Answer:** b. A secondary air pollutant  
+   **Why:** Ground-level ozone forms secondarily and is harmful.
 
 23. High BOD in water indicates:
     a. Low organic pollution  
@@ -927,11 +993,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. No microbial activity  
     d. No pollution
 
+   **Correct Answer:** b. High organic pollution  
+   **Why:** High BOD means high organic load.
+
 24. Eutrophication is mainly caused by excess:
     a. Nutrients like nitrates and phosphates  
     b. Oxygen only  
     c. Sand particles only  
     d. Sound waves
+
+   **Correct Answer:** a. Nutrients like nitrates and phosphates  
+   **Why:** Nutrient enrichment causes algal blooms.
 
 25. Biomagnification is best associated with:
     a. Increase of toxin concentration along food chain  
@@ -939,11 +1011,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Recycling of water  
     d. Formation of clouds
 
+   **Correct Answer:** a. Increase of toxin concentration along food chain  
+   **Why:** Toxins increase at higher trophic levels.
+
 26. Electrostatic precipitators are used to control:
     a. Particulate matter  
     b. Soil fertility  
     c. Drought  
     d. Biodiversity loss only
+
+   **Correct Answer:** a. Particulate matter  
+   **Why:** Electrostatic precipitators remove particulates.
 
 27. Sound intensity is measured in:
     a. ppm  
@@ -951,11 +1029,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. joule only  
     d. pH
 
+   **Correct Answer:** b. dB  
+   **Why:** Noise level is measured in decibels.
+
 28. Biomedical waste should first be:
     a. Mixed with household waste  
     b. Segregated at source  
     c. Thrown into rivers  
     d. Burned openly
+
+   **Correct Answer:** b. Segregated at source  
+   **Why:** Biomedical waste must be segregated at source.
 
 29. Carbon monoxide is dangerous mainly because it:
     a. Increases soil fertility  
@@ -963,11 +1047,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Creates biodiversity  
     d. Causes rainfall directly
 
+   **Correct Answer:** b. Reduces oxygen transport in blood  
+   **Why:** CO binds hemoglobin and reduces oxygen transport.
+
 30. Which pollution type is linked with acid rain?
     a. SO2 and NOx pollution  
     b. Plastic pollution only  
     c. Noise pollution only  
     d. Thermal pollution only
+
+   **Correct Answer:** a. SO2 and NOx pollution  
+   **Why:** SO2 and NOx form acid rain.
 
 ## Unit 4: Laws, Climate, Ozone, Biodiversity
 
@@ -977,11 +1067,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. 1981  
     d. 1986
 
+   **Correct Answer:** b. 1974  
+   **Why:** Water Act: 1974.
+
 32. The Air Prevention and Control of Pollution Act was enacted in:
     a. 1974  
     b. 1981  
     c. 1986  
     d. 2002
+
+   **Correct Answer:** b. 1981  
+   **Why:** Air Act: 1981.
 
 33. The Environment Protection Act is commonly called an umbrella act and was enacted in:
     a. 1972  
@@ -989,11 +1085,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. 1986  
     d. 2010
 
+   **Correct Answer:** c. 1986  
+   **Why:** Environment Protection Act: 1986.
+
 34. The Biological Diversity Act of India was enacted in:
     a. 1980  
     b. 1986  
     c. 1991  
     d. 2002
+
+   **Correct Answer:** d. 2002  
+   **Why:** Biological Diversity Act: 2002.
 
 35. Global warming is mainly due to increase in:
     a. Greenhouse gases  
@@ -1001,11 +1103,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Forest area only  
     d. Dissolved oxygen
 
+   **Correct Answer:** a. Greenhouse gases  
+   **Why:** Greenhouse gases trap heat.
+
 36. Ozone layer depletion is mainly linked with:
     a. CFCs  
     b. Oxygen  
     c. Nitrogen gas  
     d. Rainwater harvesting
+
+   **Correct Answer:** a. CFCs  
+   **Why:** CFCs destroy stratospheric ozone.
 
 37. The Montreal Protocol is associated with:
     a. Ozone layer protection  
@@ -1013,11 +1121,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Soil erosion only  
     d. Food chains
 
+   **Correct Answer:** a. Ozone layer protection  
+   **Why:** Montreal Protocol controls ozone-depleting substances.
+
 38. Biodiversity includes diversity at:
     a. Only genetic level  
     b. Only species level  
     c. Genetic, species, and ecosystem levels  
     d. Only population level
+
+   **Correct Answer:** c. Genetic, species, and ecosystem levels  
+   **Why:** Biodiversity has genetic, species, and ecosystem levels.
 
 39. Conservation in natural habitat is called:
     a. Ex-situ conservation  
@@ -1025,11 +1139,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Artificial selection  
     d. Biomagnification
 
+   **Correct Answer:** b. In-situ conservation  
+   **Why:** In-situ means conservation in natural habitat.
+
 40. A zoo is an example of:
     a. In-situ conservation  
     b. Ex-situ conservation  
     c. Soil erosion  
     d. Primary succession
+
+   **Correct Answer:** b. Ex-situ conservation  
+   **Why:** Zoo is ex-situ conservation.
 
 41. Endemic species are species that:
     a. Are found naturally in a specific region  
@@ -1037,11 +1157,17 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Are always extinct  
     d. Are always domestic animals
 
+   **Correct Answer:** a. Are found naturally in a specific region  
+   **Why:** Endemic species are restricted to a region.
+
 42. Climate change includes:
     a. Only temperature rise  
     b. Temperature, rainfall, sea level, and extreme weather changes  
     c. Only ozone depletion  
     d. Only soil erosion
+
+   **Correct Answer:** b. Temperature, rainfall, sea level, and extreme weather changes  
+   **Why:** Climate change includes multiple long-term climate shifts.
 
 43. Stratospheric ozone is important because it:
     a. Blocks harmful UV radiation  
@@ -1049,17 +1175,26 @@ Hour 6: Practice MCQs and revise wrong answers
     c. Causes eutrophication  
     d. Reduces biodiversity
 
+   **Correct Answer:** a. Blocks harmful UV radiation  
+   **Why:** Stratospheric ozone filters UV radiation.
+
 44. National Green Tribunal Act was enacted in:
     a. 1974  
     b. 1981  
     c. 2002  
     d. 2010
 
+   **Correct Answer:** d. 2010  
+   **Why:** NGT Act: 2010.
+
 45. Which is an example of in-situ conservation?
     a. Seed bank  
     b. Zoo  
     c. National park  
     d. Botanical garden
+
+   **Correct Answer:** c. National park  
+   **Why:** National parks protect species in natural habitat.
 
 ---
 
@@ -1253,11 +1388,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Carbon monoxide  
     d. Oxygen
 
+   **Correct Answer:** b. Carbon dioxide  
+   **Why:** Carbon dioxide is the standard basic MCQ answer for global warming.
+
 47. Noise pollution is measured in terms of:
     a. Hz  
     b. dB  
     c. KHz  
     d. Ohms
+
+   **Correct Answer:** b. dB  
+   **Why:** Noise level is measured in decibels.
 
 48. In your test key, the human ear is sensitive to which range of sound intensity?
     a. 0-80 dB  
@@ -1265,11 +1406,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. 0-180 dB  
     d. None of the options
 
+   **Correct Answer:** c. 0-180 dB  
+   **Why:** Your test key gives 0-180 dB; remember frequency range is 20 Hz to 20 kHz.
+
 49. Itai-Itai disease of bone is caused by water polluted by:
     a. Mercury  
     b. Cadmium  
     c. Fluorides  
     d. None of the options
+
+   **Correct Answer:** b. Cadmium  
+   **Why:** Itai-Itai disease is caused by cadmium pollution.
 
 50. Disease caused by deep groundwater polluted with heavy metal:
     a. Cholera  
@@ -1277,11 +1424,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Arsenicosis  
     d. Typhoid
 
+   **Correct Answer:** c. Arsenicosis  
+   **Why:** Arsenicosis is caused by arsenic-contaminated groundwater.
+
 51. Gradual deposition of radioactive debris on Earth's surface is:
     a. Fall out  
     b. Settlement  
     c. Magnification  
     d. Exposure
+
+   **Correct Answer:** a. Fall out  
+   **Why:** Radioactive fall out is deposition of radioactive debris.
 
 52. Separation of electrons from an atom by energy is:
     a. Hybridization  
@@ -1289,11 +1442,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Fertilization  
     d. Mutation
 
+   **Correct Answer:** b. Ionization  
+   **Why:** Ionization is removal/separation of electrons due to energy.
+
 53. Which contact-based method uses a flexible net to capture space debris?
     a. Robotic arms  
     b. Tethered grippers  
     c. Net-based capture  
     d. Laser ablation
+
+   **Correct Answer:** c. Net-based capture  
+   **Why:** Net-based capture uses a flexible net.
 
 54. What is a benefit of contactless methods like laser ablation?
     a. It requires physical docking  
@@ -1301,11 +1460,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. It is fuel-intensive for small debris  
     d. It only works in GEO
 
+   **Correct Answer:** b. It is effective for small debris without physical contact  
+   **Why:** Laser ablation can work without physical contact.
+
 55. Which organization's guidelines recommend de-orbiting satellites within 25 years?
     a. NASA  
     b. World Bank  
     c. SpaceX  
     d. Inter-Agency Space Debris Coordination Committee
+
+   **Correct Answer:** d. Inter-Agency Space Debris Coordination Committee  
+   **Why:** IADC guidelines include the 25-year post-mission disposal idea.
 
 56. The Paris Agreement aims to limit global warming to below:
     a. 3 degrees Celsius  
@@ -1313,11 +1478,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. 1 degree Celsius  
     d. 5 degrees Celsius
 
+   **Correct Answer:** b. 2 degrees Celsius  
+   **Why:** Paris Agreement aims to keep warming below 2 degrees Celsius.
+
 57. In urban ecosystems, biotic homogenization means:
     a. Increased species diversity  
     b. Replacement of diverse species with a few adaptable ones  
     c. Complete elimination of wildlife  
     d. Enhanced habitat connectivity
+
+   **Correct Answer:** b. Replacement of diverse species with a few adaptable ones  
+   **Why:** Biotic homogenization reduces uniqueness by favoring adaptable species.
 
 58. Which is a feature of the economic pillar of sustainability?
     a. Protecting biodiversity  
@@ -1325,11 +1496,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Fair distribution of resources  
     d. Clean air and water
 
+   **Correct Answer:** c. Fair distribution of resources  
+   **Why:** Fair distribution of resources appears under economic sustainability in the test.
+
 59. In your test key, CAMPA stands for:
     a. Central Action for Monitoring Pollution Areas  
     b. Compensatory Afforestation Fund Act  
     c. Climate and Agriculture Management Program of Asia  
     d. Community Afforestation Monitoring and Policy Act
+
+   **Correct Answer:** b. Compensatory Afforestation Fund Act  
+   **Why:** Use the test-key option; see CAMPA note above.
 
 60. Which ethical view gives moral importance only to humans?
     a. Biocentrism  
@@ -1337,11 +1514,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Anthropocentrism  
     d. Deep ecology
 
+   **Correct Answer:** c. Anthropocentrism  
+   **Why:** Anthropocentrism is human-centered.
+
 61. Which Indian constitutional article makes it a duty of citizens to protect the environment?
     a. Article 21  
     b. Article 48-A  
     c. Article 51-A(g)  
     d. Article 370
+
+   **Correct Answer:** c. Article 51-A(g)  
+   **Why:** Article 51-A(g) is the citizen duty article.
 
 62. The National Green Tribunal was established in:
     a. 1985  
@@ -1349,11 +1532,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. 2006  
     d. 2010
 
+   **Correct Answer:** d. 2010  
+   **Why:** NGT was established in 2010.
+
 63. Joint Forest Management is an example of:
     a. Centralized governance  
     b. Collaborative governance  
     c. Judicial activism  
     d. International cooperation
+
+   **Correct Answer:** b. Collaborative governance  
+   **Why:** JFM is collaborative governance.
 
 64. Which ecosystem service category includes carbon sequestration and air quality improvement?
     a. Supporting services  
@@ -1361,11 +1550,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Regulating services  
     d. Cultural services
 
+   **Correct Answer:** c. Regulating services  
+   **Why:** Carbon sequestration and air quality improvement are regulating services.
+
 65. Which principle emphasizes designing green infrastructure to deliver multiple benefits simultaneously?
     a. Connectivity  
     b. Scale integration  
     c. Multifunctionality  
     d. Resilience
+
+   **Correct Answer:** c. Multifunctionality  
+   **Why:** Multifunctionality means multiple benefits from one design.
 
 66. Extending product life through repair and remanufacturing relates to:
     a. Keep products and materials in use  
@@ -1373,11 +1568,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Emission tracking  
     d. Industrial symbiosis
 
+   **Correct Answer:** a. Keep products and materials in use  
+   **Why:** Repair and remanufacturing keep products/materials in use.
+
 67. Which indicator evaluates environmental impact throughout a product's life cycle?
     a. Circularity Gap Report  
     b. Life-Cycle Assessment  
     c. Carbon footprint  
     d. Material Flow Analysis
+
+   **Correct Answer:** b. Life-Cycle Assessment  
+   **Why:** LCA studies impacts over the product life cycle.
 
 68. Producing aluminium from recycled scrap requires approximately how much energy compared to raw bauxite?
     a. 95%  
@@ -1385,11 +1586,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. 50%  
     d. 5%
 
+   **Correct Answer:** d. 5%  
+   **Why:** Recycled aluminium uses about 5% of the energy of raw bauxite production.
+
 69. The European Union's Circular Economy Action Plan 2020 is part of:
     a. Paris Climate Accord  
     b. Kyoto Protocol  
     c. European Green Deal  
     d. United Nations SDGs
+
+   **Correct Answer:** c. European Green Deal  
+   **Why:** EU Circular Economy Action Plan 2020 is part of the European Green Deal.
 
 70. In ecological restoration, a reference ecosystem is:
     a. Historical land-use map of the site  
@@ -1397,11 +1604,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. An artificial model of the ecosystem  
     d. The local administrative boundary
 
+   **Correct Answer:** b. A healthy ecosystem of the same type used to set goals  
+   **Why:** Reference ecosystem guides restoration goals.
+
 71. Which tool is most useful for mapping and monitoring restoration at landscape scale?
     a. Miyawaki forests  
     b. GIS and remote sensing  
     c. Social fencing  
     d. Coir-based erosion control
+
+   **Correct Answer:** b. GIS and remote sensing  
+   **Why:** GIS and remote sensing are used for landscape-scale monitoring.
 
 72. The Miyawaki method is widely used in India for:
     a. Mangrove restoration  
@@ -1409,11 +1622,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Stabilizing riverbanks  
     d. Wetland hydrological recovery
 
+   **Correct Answer:** b. Creating dense urban micro-forests with native species  
+   **Why:** Miyawaki method creates dense native urban micro-forests.
+
 73. Which Indian case study is a classic example of participatory watershed restoration?
     a. Chilika Lake  
     b. Kudremukh mining area  
     c. Sukhomajri, Haryana  
     d. Aravalli Hills
+
+   **Correct Answer:** c. Sukhomajri, Haryana  
+   **Why:** Sukhomajri, Haryana is a classic participatory watershed case.
 
 74. Which technology is used in Indore to convert market organic waste into bio-CNG?
     a. Pyrolysis  
@@ -1421,11 +1640,17 @@ MCQ trap: Laser ablation is contactless; net capture is contact-based.
     c. Gasification  
     d. Composting
 
+   **Correct Answer:** b. Biomethanation  
+   **Why:** Biomethanation converts organic waste to biogas/bio-CNG.
+
 75. What unique feature makes Indore a bin-free city?
     a. Use of smart bins  
     b. Waste goes directly from households to processing plants  
     c. Burning of waste instead of storing  
     d. All waste is exported
+
+   **Correct Answer:** b. Waste goes directly from households to processing plants  
+   **Why:** Indore's model moves waste directly from households to processing plants.
 
 ## Added Answer Key
 
@@ -1481,6 +1706,7 @@ Note: In this revision guide, Tests 1-5 and 7-10 are summarized as study cue tab
 ## Tricky Official-Key Notes
 
 - Paris Agreement appears in two forms: if asked "below", answer **2 degrees Celsius**; if asked which agreement aims for **1.5 degrees Celsius**, answer **Paris Agreement**.
+- `Carbon di-oxide` in assignment options means **carbon dioxide / CO2**.
 - CAMPA: use the test-key answer if the same options appear, but know the common governance expansion is Compensatory Afforestation Fund Management and Planning Authority.
 - Human ear "sound range" in the test key is **0-180 dB**. Standard hearing frequency range is about **20 Hz to 20 kHz**.
 - Some official keys use course-specific wording. For the exam, prefer the official assessment key when the same question/options appear.
@@ -1770,6 +1996,30 @@ Primary autotrophic succession usually follows this logic:
 6. Climax: stable terminal community.
 
 MCQ trap: Ecesis is establishment, not arrival. Arrival is part of invasion.
+
+#### Succession Assignment MCQs
+
+**Test 3 Q8. The first step in Primary autotrophic succession is:**
+
+- A. Ecesis
+- B. Invasion
+- C. Nudation
+- D. None of the options
+
+**Correct Answer:** Nudation
+
+**Why:** Nudation is the first step because succession begins with formation of a bare area.
+
+**Test 3 Q9. Which of the following process causes establishment of individuals of the species in the area?**
+
+- A. Ecesis
+- B. Dispersion
+- C. Invasion
+- D. None of the options
+
+**Correct Answer:** Ecesis
+
+**Why:** Ecesis is the successful establishment of a species in a new area after arrival.
 
 ### Biodiversity, Dams, Poaching, And Green Revolution
 
